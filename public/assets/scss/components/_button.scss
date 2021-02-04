@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn__link {
+  letter-spacing: 0;
+  color: $primary-color;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  border-radius: 1rem;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.btn__primary {
+  @extend .btn;
+  background: $secondary-color;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: $text-color;
+  transition: all 0.5s ease;
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.btn__disabled {
+  @extend .btn;
+  width: 100%;
+  background: $mid-grey !important;
+  color: #fff !important;
+  border: 1px solid $mid-grey !important;
+}
