@@ -12,17 +12,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
-      border-radius: 0.5rem;
 
       & label {
         margin-right: 1.5rem;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
         text-transform: uppercase;
       }
       & .qty__btn {
         width: 2.5rem;
         height: 2.5rem;
-        border: 1px solid $mid-grey;
+        padding: 2rem;
+        // border: 1px solid $mid-grey;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -39,11 +40,16 @@
       }
 
       & input {
-        width: 6rem;
-        padding: 0.1rem 1rem;
         margin: 0 1rem;
+        width: 4rem;
         font-size: 2rem;
-        background: $light-grey;
+        text-align: center;
+        background: transparent;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
       }
     }
   }
